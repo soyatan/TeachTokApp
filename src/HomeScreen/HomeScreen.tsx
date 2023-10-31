@@ -116,7 +116,7 @@ const HomeScreen = ({route, navigation}: Props) => {
   return (
     <ImageBackground
       source={{
-        uri: 'https://cross-platform-rwa.rp.devfactory.com/images/6194%20-%20black%20people%20after%20slavery.png',
+        uri: question?.image,
       }}
       style={styles.container}>
       {loading ? (

@@ -3,7 +3,7 @@ import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import {colors} from '../Constants/colors';
 import {fonts} from '../Constants/fonts';
-import {getHeight} from '../Helpers/Responsive';
+import {getHeight, widthPercentage} from '../Helpers/Responsive';
 
 type Props = {question: String};
 
@@ -33,15 +33,14 @@ export default QuestionBox;
 const styles = StyleSheet.create({
   container: {
     opacity: 0.6,
-
+    maxWidth: widthPercentage(85),
     alignItems: 'flex-start',
     marginTop: getHeight(40),
+    borderRadius: 20,
   },
 
   whiteTextBold: {
     fontFamily: fonts.regular,
-
-    borderRadius: 20,
 
     fontWeight: '500',
     fontSize: getHeight(22),
